@@ -1,5 +1,6 @@
 body {
     background: #2f2f2f;
+    margin-top: 110px;
 }
 
 .navbar-brand {
@@ -26,10 +27,6 @@ body {
     margin: 20px 2em;
     line-height: 1.42857;
     padding: 9px 0;
-}
-
-body {
-    margin-top: 60px;
 }
 
 .navbar-default {
