@@ -1,0 +1,56 @@
+#page-wrapper {
+    min-height: 600px;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+.checkbox {
+    margin-bottom: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-left: 0;
+}
+
+#entity-map {
+    width: 600px;
+    height: 300px;
+}
+
+
+span.twitter-typeahead {
+    display: block !important;
+}
+.tt-hint {
+    color: #aaaaaa;
+}
+.header-form .typeahead {
+    text-align: left;
+    margin-top: 0;
+}
+.tt-menu {
+    background: #ffffff;
+    width: 400px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin-top: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+.tt-suggestion {
+    text-align: left;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.tt-suggestion:hover {
+    background: #eeeeee;
+}
+.tt-cursor {
+    background: #cccccc;
+}
