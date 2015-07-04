@@ -207,7 +207,5 @@ DispatcherFactory::add('ControllerFactory');
 Plugin::load('Users', ['bootstrap' => false, 'routes' => true]);
 Plugin::load('Admin', ['bootstrap' => false, 'routes' => true]);
 
-include('file_storage.php');
-
 require __DIR__ . '/events.php';
 
