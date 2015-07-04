@@ -15,7 +15,7 @@
     </thead>
     <tbody>
     <?php foreach ($patents as $patent): ?>
-        <?php if (!$patent->inventors) continue; ?>
+        <?php //if (!$patent->inventors) continue; ?>
         <tr>
             <td><?= $this->Html->link(h($patent->id), ['action' => 'view', $patent->id]); ?></td>
             <td><?= h($patent->title) ?></td>

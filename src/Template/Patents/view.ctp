@@ -58,3 +58,8 @@ $this->assign('title', $patent->title);
         <?php endif; ?>
     </div>
 </div>
+
+<?php
+debug($patent->cited);
+debug($patent->citing);
+?>

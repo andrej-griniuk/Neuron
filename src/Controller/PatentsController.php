@@ -32,11 +32,14 @@ class PatentsController extends AppController
         $this->set('_serialize', ['patents']);
     }
 
-    public function view($id = null)
+    public function view($id)
     {
         $patent = $this->Patents->get($id, [
             'contain' => ['Inventors', 'Cited', 'Citing']
         ]);
+
+
+
         $this->set('patent', $patent);
         $this->set('_serialize', ['patent']);
     }

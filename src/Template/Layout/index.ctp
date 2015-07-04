@@ -12,7 +12,7 @@ use Users\Model\Entity\User;
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a href="<?= Router::url('/', true) ?>" class="navbar-brand"><?= Configure::read('Site.name') ?></a>
+            <a href="<?= Router::url('/', true) ?>" class="navbar-brand"><img src="img/logo.png" alt="<?= Configure::read('Site.name') ?>" /></a>
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -20,7 +20,7 @@ use Users\Model\Entity\User;
             </button>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav pull-right">
                 <?= $this->Element('Nav' . DS . 'main') ?>
             </ul>
         </div>
