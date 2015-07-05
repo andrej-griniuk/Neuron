@@ -63,3 +63,14 @@ $this->assign('title', $patent->title);
 debug($patent->cited);
 debug($patent->citing);
 ?>
+
+<?php $this->append('script'); ?>
+<script>
+    var PATENT = <?= json_encode($patent) ?>;
+    $(function(){
+        console.log(PATENT);
+        console.log(PATENT.cited);
+        console.log(PATENT.citing);
+    })
+</script>
+<?php $this->end(); ?>

@@ -35,7 +35,23 @@ class PatentsController extends AppController
     public function view($id)
     {
         $patent = $this->Patents->get($id, [
-            'contain' => ['Inventors', 'Cited', 'Citing']
+            'contain' => [
+                'Inventors',
+                'Cited',
+                'Citing',
+                'Cited.Cited',
+                'Cited.Cited.Cited',
+                'Cited.Cited.Citing',
+                'Cited.Citing',
+                'Cited.Citing.Cited',
+                'Cited.Citing.Citing',
+                'Citing.Cited',
+                'Citing.Cited.Cited',
+                'Citing.Cited.Citing',
+                'Citing.Citing',
+                'Citing.Citing.Cited',
+                'Citing.Citing.Citing',
+            ]
         ]);
 
 

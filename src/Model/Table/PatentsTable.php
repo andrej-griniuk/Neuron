@@ -30,6 +30,7 @@ class PatentsTable extends Table
         $this->hasMany('Inventors', [
             'foreignKey' => 'patent_id'
         ]);
+        /*
         $this->hasMany('Citing', [
             'className' => 'Citations',
             'foreignKey' => 'citing_id'
@@ -38,8 +39,7 @@ class PatentsTable extends Table
             'className' => 'Citations',
             'foreignKey' => 'cited_id'
         ]);
-
-        /*
+        */
         $this->belongsToMany('Citing', [
             'className'        => 'Patents',
             'joinTable'        => 'citations',
@@ -52,7 +52,6 @@ class PatentsTable extends Table
             'foreignKey'       => 'citing_id',
             'targetForeignKey' => 'cited_id',
         ]);
-        */
     }
 
     /**
