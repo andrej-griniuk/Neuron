@@ -59,11 +59,6 @@ $this->assign('title', $patent->title);
     </div>
 </div>
 
-<?php
-debug($patent->cited);
-debug($patent->citing);
-?>
-
 <?php $this->append('script'); ?>
 <script>
     var PATENT = <?= json_encode($patent) ?>;
