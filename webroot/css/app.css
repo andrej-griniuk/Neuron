@@ -51,3 +51,26 @@ footer p {
 table thead a {
     color: #ffffff;
 }
+.jumbotron h1 {
+    font-size: 40px;
+    margin-bottom:24px;
+}
+.jumbotron #filter {
+    margin-top:34px;
+}
+.jumbotron button {
+    margin-top:17px;
+}
+.pagination > li > a {
+    background-color: #5C5C5C;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    color: #FFF;
+    background-color: #3E3C3C;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #A71C11;
+}
+table-bordered > thead > tr > th, .table-bordered > thead > tr > th, table-bordered > tbody > tr > th, .table-bordered > tbody > tr > th, table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > th, table-bordered > thead > tr > td, .table-bordered > thead > tr > td, table-bordered > tbody > tr > td, .table-bordered > tbody > tr > td, table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > td {
+    border: 0px;
+}
