@@ -74,3 +74,51 @@ table thead a {
 table-bordered > thead > tr > th, .table-bordered > thead > tr > th, table-bordered > tbody > tr > th, .table-bordered > tbody > tr > th, table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > th, table-bordered > thead > tr > td, .table-bordered > thead > tr > td, table-bordered > tbody > tr > td, .table-bordered > tbody > tr > td, table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > td {
     border: 0px;
 }
+.author-title {
+  font-size: 24px;
+}
+.author-link {
+  font-size: 20px;
+}
+
+/* d3 graph */
+
+
+svg {
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 2.2px;
+}
+
+#licensing {
+/*  fill: green; */
+}
+
+.link.licensing {
+/*  stroke: green; */
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+circle {
+  fill: #cc1507;
+  stroke: #f55905;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  fill: white;
+/*  text-shadow: 0 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000, -1px 0 0 #000; */
+}
+
+.active-node {
+  stroke: #ffcc00;
+  fill:#F29E0C;
+}

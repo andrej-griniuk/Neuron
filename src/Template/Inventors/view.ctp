@@ -34,3 +34,6 @@ $this->assign('title', $inventor->inv_name);
     <?php endforeach; ?>
     </tbody>
 </table>
+
+<div id="other-inventions"></div>
+
