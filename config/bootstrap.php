@@ -194,7 +194,6 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('BootstrapUI');
-Plugin::load('ADmad/HybridAuth', ['bootstrap' => true, 'routes' => true]);
 Plugin::load('Crud');
 
 /**
@@ -203,9 +202,6 @@ Plugin::load('Crud');
 DispatcherFactory::add('Asset');
 DispatcherFactory::add('Routing');
 DispatcherFactory::add('ControllerFactory');
-
-Plugin::load('Users', ['bootstrap' => false, 'routes' => true]);
-Plugin::load('Admin', ['bootstrap' => false, 'routes' => true]);
 
 require __DIR__ . '/events.php';
 

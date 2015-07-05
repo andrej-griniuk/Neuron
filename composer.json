@@ -11,9 +11,6 @@
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
         "friendsofcake/bootstrap-ui": "~0.3",
-        "admad/cakephp-hybridauth": "~3.0",
-        "burzum/cakephp-file-storage": "3.0.*@dev",
-        "burzum/cakephp-imagine-plugin": "3.0.*@dev",
         "friendsofcake/crud": "~4.0"
     },
     "require-dev": {
