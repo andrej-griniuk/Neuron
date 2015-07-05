@@ -144,8 +144,8 @@ function transform(d) {
             </tbody>
         </table>
         <p>
-            <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=<?= $patent->id ?>" class="btn btn-danger"><?= __('Details') ?></a>&nbsp;&nbsp;
-            <a href="http://neuron.vanillacommunity.com/discussion/7/section-g-physics#latest" class="btn btn-warning"><?= __('Comments') ?></a>
+            <a target="_blank" href="https://patentscope.wipo.int/search/en/detail.jsf?docId=<?= $patent->id ?>" class="btn btn-danger"><?= __('Details') ?></a>&nbsp;&nbsp;
+            <a target="_blank" href="http://neuron.vanillacommunity.com/discussion/7/section-g-physics#latest" class="btn btn-warning"><?= __('Comments') ?></a>
         </p>
         <?php if ($patent->inventors): ?>
             <h3><?= __('Inventors') ?></h3>

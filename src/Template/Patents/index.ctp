@@ -41,3 +41,28 @@
         <?= $this->Paginator->next(__('next') . ' >') ?>
     </ul>
 </div>
+
+<div style="clear:both;"></div>
+<h1>CSIRO related datasets</h1>
+<br>
+<div id="csiro" class="row" style="margin-left:2px;"></div>
+
+<?php if (isset($this->request->query['q'])): ?>
+<?php $this->append('script'); ?>
+<script>
+
+   $(document).ready(function () {
+     jQuery.browser = {};
+jQuery.getFeed({
+url: "api/loadCSIRO.php?name=<?= $this->request->query['q'] ?>",
+   success: function(feed) {
+     console.log(feed.items);
+     for (var i = 0; i < 10; i++) {
+       $("#csiro").append("<p><a href='"+feed.items[i].link+"'>CSIRO Dataset </a>"+feed.items[i].title+"</p>");
+     }
+   }
+ });               
+});
+</script>
+<?php $this->end(); ?>
+<?php endif; ?>

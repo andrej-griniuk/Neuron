@@ -4,6 +4,16 @@ $this->assign('title', $inventor->inv_name);
 <p>
 
 </p>
+<div class="row">
+<div class="col-sm-9">
+<p style="margin-top:10px;margin-bottom:20px;">Internet enthusiast. Certified problem solver. Bacon nerd. Beer ninja. Communicator.</p>
+<button class="btn btn-sm btn-info">Twitter</button> &nbsp;&nbsp;
+<button class="btn btn-sm btn-warning">LinkedIn</button>
+</div>
+<div class="col-sm-3">
+<img src="http://api.randomuser.me/portraits/med/men/<?=rand ( 20 , 50 ) ?>.jpg">
+</div>
+</div>
 <h3><?= __('Patents') ?></h3>
 <table cellpadding="0" cellspacing="0" class="table table-hover table-bordered table-striped">
     <thead>
